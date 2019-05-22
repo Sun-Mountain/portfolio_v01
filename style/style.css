@@ -1,0 +1,372 @@
+/* BASICS */
+
+body {
+    background-color:#282e2c;
+    font-family: 'Sirin Stencil', cursive;
+    font-family: 'Arvo', serif;
+    margin: auto;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    min-height: 300px;
+    display: inline-block;
+    background: url("../images/zonnbg1.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    height: 100%;
+    background-color: #282e2c;
+    color: #FFFFFF;
+    padding: 1px 50px 0 0;
+    text-align: right;
+    font-family: 'Sirin Stencil', cursive;
+    font-family: 'Arvo', serif;
+    font-size: 12px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+/* BASIC ELEMENTS */
+
+a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a:hover {
+    opacity: .5;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+h1 {
+    font-family: 'Sirin Stencil', cursive;
+    font-family: 'Arvo', serif;
+    color: #FFFFFF;
+    font-weight: 600;
+    letter-spacing: 13px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Sirin Stencil', cursive;
+    font-family: 'Arvo', serif;
+    font-weight: 400;
+    margin: 0 0 25px 0;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'Sirin Stencil', cursive;
+    font-family: 'Arvo', serif;
+    font-size: 14px;
+    font-weight: 100;
+    color: #FFFFFF;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+}
+
+section {
+    min-height: 200px;
+}
+
+.nav {
+    background-color: #282e2c;
+    color: #FFFFFF;
+    font-family: 'Sirin Stencil', cursive;
+    font-family: 'Arvo', serif;  
+    font-size: 18px;
+    height: 50px;
+    margin: 0 0 10px 0;
+    width: 100%;
+}
+
+/* ABOUT SECTION */
+
+#about {
+    background-color: #F5D4C2;
+    padding: 0 0 10px 0;
+}
+
+.headshot {
+    width: 225px;
+    height: auto;
+    padding: 10px;
+    border-radius: 200px;
+}
+
+#adj1 {
+    font-family: 'Sirin Stencil', cursive;
+    font-family: 'Arvo', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #5a8089;
+    padding-top: 16px;
+    padding-bottom: 8px;
+}
+
+#adj2 {
+    font-family: 'Sirin Stencil', cursive;
+    font-family: 'Arvo', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #b52f14;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#adj3 {
+    font-family: 'Sirin Stencil', cursive;
+    font-family: 'Arvo', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #282e2c;
+    padding-top: 8px;
+    padding-bottom: 25px;
+}
+
+.name {
+    font-family: 'Sirin Stencil', cursive;
+    font-family: 'Arvo', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #444444;
+    padding: 8px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    padding: 0 10px;
+}
+
+.skills {
+    margin: 5px auto;
+    padding: 5px;
+}
+
+/* PORTFOLIO SECTION */
+
+#portfolio {
+    background-color: #a3a3a3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 10px 0;
+}
+
+/* TEXT HOVER */
+.overflow {
+    overflow: auto;
+}
+
+.project {
+    position: relative;
+    margin: 10px auto;
+    padding: 10px 0;
+    width: 350px;
+}
+
+.project img {
+    border-radius: 4px;
+    width: 350px;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    border-radius: 4px;
+}
+
+.project:hover .overlay{
+    opacity: 1;
+}
+
+.overlay-details {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.overlay-details a {
+    text-transform: lowercase;
+}
+
+.project:hover .overlay-details {
+    top: 48%;
+    opacity: 1;
+    font-size: 1.5em;
+}
+
+.project-title {
+    font-size: 18px;
+    margin: 0 0 -10px 0;
+    text-decoration: underline;
+}
+
+.project-details {
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+.project-details span {
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.project-details p {
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.border {
+    margin: 25px;
+}
+
+/* CONNECT SECTION */
+
+#connect {
+    background-color: #5a8089;
+    padding: 0 0 10px 0;
+}
+
+#email {
+    color: #FFFFFF;
+}
+
+.logocon {
+    width: 80px;
+    height: auto;
+    padding: 25px 50px;
+}
+
+#logoconf {
+    width: 70px;
+    height: auto;
+    padding: 25px 50px;
+}
+
+.logoimg {
+    width: 100px;
+    height: auto;
+    padding: 25px 50px;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    flex-direction: wrap;
+    align-items: center;
+    /* overflow: auto; */
+}
+
+/* FOOTER */
+
+#ga {
+    color: #b52f14;
+}
+
+
+/* for larger screens */
+
+@media screen and (max-width: 576px) {
+
+    a {
+        font-size: 16px;
+    }
+
+    .logos {
+        flex-direction: column;
+    }
+    
+    .logoimg {
+        width: 100px;
+        height: auto;
+        padding: 25px 50px;
+    }
+    
+    .logocon {
+        width: 80px;
+        height: auto;
+        padding: 25px 50px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 0px;
+    }
+}
+
+@media screen and (min-width:1000px) { 
+    body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 300px 600px 1fr;
+    }   
+
+    nav {
+        display: none;
+    }
+
+    header {
+        height: 350px;
+        grid-column: 1 / span 3;
+        grid-row: 1;
+    }
+
+    .logos {
+        flex-direction: column;
+    }
+
+    #about {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #projects {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #connect {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    footer {
+        grid-column: 1 / span 3;
+        grid-row: 3 / span 3;
+    }
+}
